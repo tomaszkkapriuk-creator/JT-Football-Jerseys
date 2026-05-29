@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+
+header {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+nav {
+    background: #111827;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px;
+}
+
+
+.container {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.produkt {
+    background: #ffffff;
+    box-shadow:  0 10px 30px rgba(0, 0, 0, 0.1);;
+    padding: 25px 20px;
+    text-align: center;
+
+    width: 250px; 
+    min-height: 430px;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* UNOSZENIE KAFELKÓW */
+.produkt:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.produkt h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    background-color: #111827;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: var(--transition);
+    width: 100%;
+}
+
+
+footer {
+    background-color:#111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+
+
+
+.produkt select {
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 15px;
+    
+}
+
+
+.section-tytul {
+    width: 100%; 
+    text-align: center; 
+    font-size: 34px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 35px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+.wyszukiwanie {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    height: 20vh;
+    height: 320px;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.wyszukiwanie2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.wyszukiwanie2 h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.falszywe-wyszukiwanie {
+    background: white;
+    color: #111827;
+    border-radius: 999px;
+    padding: 18px 28px;
+    width: min(700px, 90%);
+    margin: 0 auto 20px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.prawdziwe-wyszukiwanie {
+    background: white;
+    border-radius: 999px;
+    padding: 14px 20px;
+    width: min(700px, 90%);
+    margin: 20px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.prawdziwe-wyszukiwanie input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+.wyszukiwanie {
+    position: relative;
+}
+
+
+.koszyk {
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+    position: absolute;
+    top: 45px;
+    right: 26px;
+}
+
+.kontakt {
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+.koszulka {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.koszulka img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.koszulka .tyl {
+  opacity: 0;
+  transform: scale(1);
+}
+
+
+.produkt:hover .tyl {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.lewa-strona {
+    flex: 1;
+}
+
+
+.prawa-strona {
+    flex: 1;
+}
