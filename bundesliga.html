@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Bundesliga</title>
+<link rel="stylesheet" href="main.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<section class="wyszukiwanie">
+    <div class="wyszukiwanie2">
+
+        <h3>Znajdź swoją wymarzoną koszulkę</h3>
+
+        <div class="falszywe-wyszukiwanie" id="falszywewyszukiwanie">
+            <span id="wpisywanie-tekstu"></span>
+            <span class="kursor">|</span>
+        </div>
+
+        <div class="prawdziwe-wyszukiwanie hidden" id="prawdziwewyszukiwanie">
+            <input type="text" id="wyszukiwanieinput" placeholder="Szukaj koszulki..." />
+        </div>
+
+    <a href="kontakt.html" class="kontakt">Kontakt</a>
+
+    <a href="koszyk.html" class="koszyk">Koszyk</a>
+
+    </div>
+</section>
+
+<nav>
+<a href="stronaglowna.html">Bestsellery</a>
+<a href="laliga.html">La Liga</a>
+<a href="premierleague.html">Premier League</a>
+<a href="seriea.html">Serie A</a>
+<a href="bundesliga.html">Bundesliga</a>
+<a href="ligue1.html">Ligue 1</a>
+<a href="ligaportugal.html">Liga Portugal</a>
+<a href="eredivisie.html">Eredivisie</a>
+</nav>
+
+<div class="container">
+
+<h2 class="section-tytul">BUNDESLIGA</h2>
+
+
+
+<div class="produkt" data-druzyna="bayern">
+
+<h3>Koszulka<br>BAYERN MONACHIUM</h3>
+
+<div class="koszulka">
+    <img class="przod" src="bayern-domowa-przod.webp">
+    <img class="tyl" src="bayern-domowa-tyl.webp">
+</div>
+<p>419,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka BAYERN MONACHIUM',419.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="dortmund">
+
+<h3>Koszulka<br>BORUSSIA DORTMUND</h3>
+
+<div class="koszulka">
+    <img class="przod" src="dortmund-domowa-przod.webp">
+    <img class="tyl" src="dortmund-domowa-tyl.webp">
+</div>
+<p>399,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka BORUSSIA DORTMUND',399.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="union">
+
+<h3>Koszulka<br>UNION BERLIN</h3>
+
+<div class="koszulka">
+    <img class="przod" src="union-domowa-przod.webp">
+    <img class="tyl" src="union-domowa-tyl.webp">
+</div>
+<p>319,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka UNION BERLIN',319.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="werder">
+
+<h3>Koszulka<br>WERDER BREMA</h3>
+
+<div class="koszulka">
+    <img class="przod" src="werder-domowa-przod.webp">
+    <img class="tyl" src="werder-domowa-tyl.webp">
+</div>
+<p>309,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka WERDER BREMA',309.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="bayer">
+
+<h3>Koszulka<br>BAYER LEVERKUSEN</h3>
+
+<div class="koszulka">
+    <img class="przod" src="bayer-domowa-przod.webp">
+    <img class="tyl" src="bayer-domowa-tyl.webp">
+</div>
+<p>389,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka BAYER LEVERKUSEN',389.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="frankfurt">
+
+<h3>Koszulka<br>EINTRACHT FRANKFURT</h3>
+
+<div class="koszulka">
+    <img class="przod" src="frankfurt-domowa-przod.webp">
+    <img class="tyl" src="frankfurt-domowa-tyl.webp">
+</div>
+<p>329,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka EINTRACHT FRANKFURT',329.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="leipzig">
+
+<h3>Koszulka<br>RB LEIPZIG</h3>
+
+<div class="koszulka">
+    <img class="przod" src="leipzig-domowa-przod.webp">
+    <img class="tyl" src="leipzig-domowa-tyl.webp">
+</div>
+<p>319,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka RB LEIPZIG',319.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+</div>
+
+<footer>
+<p>JT Football Jerseys</p>
+</footer>
+
+</body>
+</html>

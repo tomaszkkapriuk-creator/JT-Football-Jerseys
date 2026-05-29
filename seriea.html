@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Serie A</title>
+
+<link rel="stylesheet" href="main.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<section class="wyszukiwanie">
+    <div class="wyszukiwanie2">
+
+        <h3>Znajdź swoją wymarzoną koszulkę</h3>
+
+        <div class="falszywe-wyszukiwanie" id="falszywewyszukiwanie">
+            <span id="wpisywanie-tekstu"></span>
+            <span class="kursor">|</span>
+        </div>
+
+        <div class="prawdziwe-wyszukiwanie hidden" id="prawdziwewyszukiwanie">
+            <input type="text" id="wyszukiwanieinput" placeholder="Szukaj koszulki..." />
+        </div>
+
+    <a href="kontakt.html" class="kontakt">Kontakt</a>
+
+    <a href="koszyk.html" class="koszyk">Koszyk</a>
+
+    </div>
+</section>
+
+<nav>
+<a href="stronaglowna.html">Bestsellery</a>
+<a href="laliga.html">La Liga</a>
+<a href="premierleague.html">Premier League</a>
+<a href="seriea.html">Serie A</a>
+<a href="bundesliga.html">Bundesliga</a>
+<a href="ligue1.html">Ligue 1</a>
+<a href="ligaportugal.html">Liga Portugal</a>
+<a href="eredivisie.html">Eredivisie</a>
+</nav>
+
+<div class="container">
+
+<h2 class="section-tytul">SERIE A</h2>
+
+
+
+<div class="produkt" data-druzyna="inter">
+
+<h3>Koszulka<br>INTER MEDIOLAN</h3>
+
+<div class="koszulka">
+    <img class="przod" src="inter-domowa-przod.webp">
+    <img class="tyl" src="inter-domowa-tyl.webp">
+</div>
+<p>399,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka INTER MEDIOLAN',399.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="milan">
+
+<h3>Koszulka<br>AC MILAN</h3>
+
+<div class="koszulka">
+    <img class="przod" src="milan-domowa-przod.webp">
+    <img class="tyl" src="milan-domowa-tyl.webp">
+</div>
+<p>389,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka AC MILAN',389.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="napoli">
+
+<h3>Koszulka<br>SSC NAPOLI</h3>
+
+<div class="koszulka">
+    <img class="przod" src="napoli-domowa-przod.webp">
+    <img class="tyl" src="napoli-domowa-tyl.webp">
+</div>
+<p>349,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka SSC NAPOLI',349.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="fiorentina">
+
+<h3>Koszulka<br>FIORENTINA</h3>
+
+<div class="koszulka">
+    <img class="przod" src="fiorentina-domowa-przod.webp">
+    <img class="tyl" src="fiorentina-domowa-tyl.webp">
+</div>
+<p>319,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka FIORENTINA',319.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="juve">
+
+<h3>Koszulka<br>JUVENTUS F.C.</h3>
+
+<div class="koszulka">
+    <img class="przod" src="juve-domowa-przod.webp">
+    <img class="tyl" src="juve-domowa-tyl.webp">
+</div>
+<p>429,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka JUVENTUS F.C.',429.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="atalanta">
+
+<h3>Koszulka<br>ATALANTA BC</h3>
+
+<div class="koszulka">
+    <img class="przod" src="atalanta-domowa-przod.webp">
+    <img class="tyl" src="atalanta-domowa-tyl.webp">
+</div>
+<p>399,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka ATALANTA BC',399.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+
+
+<div class="produkt" data-druzyna="lazio">
+
+<h3>Koszulka<br>S.S. LAZIO</h3>
+
+<div class="koszulka">
+    <img class="przod" src="lazio-domowa-przod.webp">
+    <img class="tyl" src="lazio-domowa-tyl.webp">
+</div>
+<p>309,99 zł</p>
+
+<select onchange="zmianaKoszulki(this)">
+    <option value="domowa">Domowa</option>
+    <option value="wyjazdowa">Wyjazdowa</option>
+</select>
+
+<select class="rozmiar">
+    <option value="">Wybierz rozmiar</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+</select>
+
+<button onclick="dodawanieDoKoszyka(this,'Koszulka S.S. LAZIO',309.99)">
+Dodaj do koszyka
+</button>
+
+</div>
+
+</div>
+
+<footer>
+<p>JT Football Jerseys</p>
+</footer>
+
+</body>
+</html>
